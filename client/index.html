@@ -18,12 +18,27 @@
         </div>
         <div class="container">
           <div class="card-container">
-            <div class="card" v-for="disc in this.musicDiscs">
+            <div
+              class="card"
+              v-for="disc in this.musicDiscs"
+              @click="getMusicDiscs(disc.id)">
               <img class="cover" :src="disc.cover" :alt="disc.name" />
               <h3>{{disc.name}}</h3>
               <p>{{disc.artist}}</p>
               <h5>{{disc.year}}</h5>
             </div>
+          </div>
+        </div>
+        <div v-show="showInfo" class="info" @click.self="closeInfo()">
+          <div class="info-content">
+            <span class="close-info" @click="closeInfo()">&times;</span>
+            <img
+              class="cover"
+              :src="infoResults.cover"
+              :alt="infoResults.name" />
+            <h3>{{infoResults.name}}</h3>
+            <p>{{infoResults.artist}}</p>
+            <h5>{{infoResults.year}}</h5>
           </div>
         </div>
       </main>
