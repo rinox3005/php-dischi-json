@@ -11,14 +11,24 @@
   <body>
     <div id="app" v-cloak>
       <header>
-        <h1>{{title}}</h1>
+        <div class="container">
+          <div class="logo">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Music_logo.png"
+              alt="" />
+            <h1>Greatest Hits</h1>
+          </div>
+        </div>
       </header>
       <main>
         <div class="container">
-          <div class="card" v-for="disc in this.musicDiscs">
-            <img class="cover" :src="disc.cover" :alt="disc.name" />
-            <h3>{{disc.name}}</h3>
-            <p>{{disc.description}}</p>
+          <div class="card-container">
+            <div class="card" v-for="disc in this.musicDiscs">
+              <img class="cover" :src="disc.cover" :alt="disc.name" />
+              <h3>{{disc.name}}</h3>
+              <p>{{disc.description}}</p>
+              <h5>{{disc.year}}</h5>
+            </div>
           </div>
         </div>
       </main>
