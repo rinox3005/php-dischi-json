@@ -4,17 +4,71 @@
     "name": "The Razors Edge",
     "artist": "AC/DC",
     "description": "The Razors Edge is the twelfth studio album by Australian rock band AC/DC. Released on 24 September 1990, through Albert Productions/CBS Records International in Australasia and Atlantic Records in Europe, it was recorded in 1990 in Little Mountain Sound Studios in Vancouver, Canada, and was mixed and engineered by Mike Fraser and produced by Bruce Fairbairn. It was a major comeback for the band, featuring the hits \"Thunderstruck\", \"Are You Ready\" and \"Moneytalks\".",
-    "cover": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-147025-8c4b9feaa85e554314cfc2661838f91ad13438f6.jpg",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/a/a8/Razorsedge.jpg",
     "year": 1990,
     "tracks": 12
   },
   {
     "id": 2,
-    "name": "Prova",
-    "artist": "AC/DC",
-    "description": "The Razors Edge is the twelfth studio album by Australian rock band AC/DC. Released on 24 September 1990, through Albert Productions/CBS Records International in Australasia and Atlantic Records in Europe, it was recorded in 1990 in Little Mountain Sound Studios in Vancouver, Canada, and was mixed and engineered by Mike Fraser and produced by Bruce Fairbairn. It was a major comeback for the band, featuring the hits \"Thunderstruck\", \"Are You Ready\" and \"Moneytalks\".",
-    "cover": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-147025-8c4b9feaa85e554314cfc2661838f91ad13438f6.jpg",
-    "year": 1990,
+    "name": "Departure",
+    "artist": "Journey",
+    "description": "Departure is the sixth studio album by American rock band Journey. It was released on February 29, 1980, by Columbia Records. Departure was Journey's highest-charting album to that point, giving them their first appearance in the top 10 of the Billboard 200 album charts, peaking at No. 8. The album includes \"Any Way You Want It\", the leadoff track and top 25 single.",
+    "cover": "https://m.media-amazon.com/images/I/81euFQVF5ML._UF1000,1000_QL80_.jpg",
+    "year": 1980,
+    "tracks": 14
+  },
+  {
+    "id": 3,
+    "name": "Hybrid Theory",
+    "artist": "Linkin Park",
+    "description": "Hybrid Theory is the debut studio album by American rock band Linkin Park, released on October 24, 2000, by Warner Bros. Records. Recorded at NRG Recordings in North Hollywood, California, and produced by Don Gilmore, the album's lyrical themes deal with problems lead vocalist Chester Bennington experienced during his adolescence, including drug abuse and the constant fighting and eventual divorce of his parents. Hybrid Theory takes its title from the previous name of the band as well as the concept of music theory and combining different styles. It is also the band's only album on which bassist Dave \"Phoenix\" Farrell does not play, however he is credited as a songwriter on some of its tracks",
+    "cover": "https://m.media-amazon.com/images/I/81iC+O0ec2L._UF1000,1000_QL80_.jpg",
+    "year": 1980,
+    "tracks": 14
+  },
+  {
+    "id": 4,
+    "name": "Toxicity",
+    "artist": "System Of A Down",
+    "description": "Toxicity is the second studio album by the American heavy metal band System of a Down, released on September 4, 2001, by American Recordings and Columbia Records. Expanding on their 1998 eponymous debut album, Toxicity incorporates more melody, harmonies, and singing than the band's first album. Categorized primarily as alternative metal and nu metal, the album features elements of multiple genres, including folk, progressive rock, jazz, and Armenian and Greek music, including prominent use of instruments like the sitar, banjo, keyboards, and piano. It contains a wide array of political and non-political themes, such as mass incarceration, the CIA, the environment, police brutality, drug addiction, scientific reductionism, and groupies.",
+    "cover": "https://m.media-amazon.com/images/I/91o4-BvL0fL._UF1000,1000_QL80_.jpg",
+    "year": 2001,
+    "tracks": 15
+  },
+  {
+    "id": 5,
+    "name": "Eye Of The Tiger",
+    "artist": "Survivor",
+    "description": "\"Eye of the Tiger\" is a song by the American rock band Survivor. It was written as the theme song for the 1982 film Rocky III and released that year as a single from Survivor's third album, Eye of the Tiger. Sylvester Stallone, the director and star of Rocky III, enlisted Survivor to write the song after the band Queen denied him permission to use their song \"Another One Bites the Dust\". They derived lyrics, including the title, from dialogue in the film, and conceived a riff with chord changes to match the punches in the boxing scenes.",
+    "cover": "https://m.media-amazon.com/images/I/81dvE4P1wAL._UF1000,1000_QL80_.jpg",
+    "year": 1982,
+    "tracks": 9
+  },
+  {
+    "id": 6,
+    "name": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "description": "Bohemian Rhapsody: The Original Soundtrack is the soundtrack album to the Queen biographical film of the same name. The soundtrack features many of the band's songs and unreleased recordings including tracks from their legendary concert at Live Aid in 1985. The soundtrack was released by Hollywood Records and Virgin EMI Records on 19 October 2018, on CD, cassette and digital formats. The soundtrack was later released on 8 February 2019, as a vinyl double album specially cut at Abbey Road Studios. A limited and much sought after double picture disc edition of the album, as well as a 7\" coloured single featuring the original \"Bohemian Rhapsody\"/\"I'm in Love with My Car\" pairing, was also released on Record Store Day, 13 April 2019. The disc artwork takes its inspiration from the photography of Denis O'Regan. In November 2019, the soundtrack received an American Music Award for Top Soundtrack.",
+    "cover": "https://m.media-amazon.com/images/I/61dk4SHy1CL._UF894,1000_QL80_.jpg",
+    "year": 2018,
+    "tracks": 22
+  },
+  {
+    "id": 7,
+    "name": "Appetite for Destruction",
+    "artist": "Guns N' Roses",
+    "description": "Appetite for Destruction is the debut studio album by American hard rock band Guns N' Roses, released on July 21, 1987, by Geffen Records. It initially received little mainstream attention, and it was not until the following year that Appetite for Destruction became a commercial success, after the band had toured and received significant airplay with the singles \"Welcome to the Jungle\", \"Paradise City\", and \"Sweet Child o' Mine\". The album went on to peak at number one on the US Billboard 200, and it became the seventh best-selling album of all time in the United States, as well as the best-selling debut album in the country. With over 30 million copies sold worldwide, it is also one of the best-selling albums globally.",
+    "cover": "https://upload.wikimedia.org/wikipedia/it/0/06/Appetite_for_Destruction.jpg",
+    "year": 1987,
     "tracks": 12
+  },
+  {
+    "id": 8,
+    "name": "Curtain Call: The Hits",
+    "artist": "Eminem",
+    "description": "Curtain Call: The Hits is the first greatest hits album by American rapper Eminem. It was released on December 6, 2005, under Shady Records, Aftermath Entertainment, and Interscope Records. The album collects Eminem's most popular singles, as well as three new songs, including a live version of \"Stan\", featuring English singer-songwriter Elton John performed at the 43rd Grammy Awards, plus the songs \"Fack\", \"When I'm Gone\" and \"Shake That\" featuring Nate Dogg",
+    "cover": "https://m.media-amazon.com/images/I/81Gqqd5wPbL._UF1000,1000_QL80_.jpg",
+    "year": 2005,
+    "tracks": 17
   }
 ]

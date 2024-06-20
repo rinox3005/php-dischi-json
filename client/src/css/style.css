@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playwrite NZ", cursive;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 [v-cloak] {
@@ -34,6 +36,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 100px;
 }
 
 .card {
@@ -41,7 +44,7 @@ h1 {
   padding: 20px;
   color: white;
   border-radius: 20px;
-  background-color: #0a090f;
+  background-color: #0a090fb0;
 }
 
 .card:hover {
@@ -49,7 +52,7 @@ h1 {
   background: linear-gradient(
     90deg,
     rgba(248, 27, 3, 1) 0%,
-    rgba(255, 100, 134, 1) 49%,
+    rgba(183, 24, 148, 1) 58%,
     rgba(253, 208, 46, 1) 100%
   );
 }
@@ -65,8 +68,8 @@ h1 {
 }
 
 .logo img {
-  height: 120px;
-  margin: 50px;
+  height: 140px;
+  margin: 40px;
 }
 
 /* Modal Info */
@@ -83,14 +86,24 @@ h1 {
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .info-content {
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e) #383232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background: linear-gradient(to right, #0f0c2998, #302b638f, #24243e9a) #383232;
   margin: auto;
   padding: 40px;
-  border: 1px solid #888;
+  border: 2px solid;
+  border-image: linear-gradient(
+      rgba(248, 27, 3, 1) 0%,
+      rgba(183, 24, 148, 1) 58%,
+      rgba(253, 208, 46, 1) 100%
+    )
+    90;
   width: 80%;
   max-width: 1200px;
   text-align: center;
@@ -99,16 +112,87 @@ h1 {
 
 .close-info {
   color: #aaa;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: bold;
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 20px;
 }
 
 .close-info:hover,
 .close-info:focus {
-  color: black;
+  color: antiquewhite;
   text-decoration: none;
   cursor: pointer;
+}
+
+.cover-info {
+  width: 450px;
+}
+
+.card h2,
+h3,
+h4 {
+  margin-top: 10px;
+}
+
+.album {
+  color: antiquewhite;
+}
+
+.album h2 {
+  margin-top: 12px;
+}
+
+.disc-info {
+  color: antiquewhite;
+}
+
+.disc-info p {
+  font-size: 23px;
+  padding-top: 20px;
+  line-height: 1.5;
+}
+
+.disc-info div {
+  font-size: 27px;
+  padding: 0 15px;
+  display: inline-block;
+}
+
+.disc-info span,
+.album span {
+  font-style: italic;
+}
+
+@media screen and (max-width: 1200px) {
+  .disc-info p {
+    font-size: 20px;
+  }
+
+  .disc-info div {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .info-content {
+    flex-wrap: wrap;
+  }
+
+  .cover-info {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cover-info {
+    width: 300px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .cover-info {
+    width: 250px;
+  }
 }
