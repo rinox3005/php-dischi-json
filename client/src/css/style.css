@@ -7,3 +7,28 @@
 [v-cloak] {
   display: none;
 }
+main {
+  padding-bottom: 50px;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.cover {
+  width: 300px;
+}

@@ -1,14 +1,42 @@
 [
   {
     "name": "Prova1",
-    "description": "Prova1 description"
+    "description": "Prova1 description",
+    "cover": "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/285655006/original/387a272c04f43c1f364d43e556883b0907c83a85/design-unique-music-album-cover-art.jpg"
   },
   {
     "name": "Prova2",
-    "description": "Prova2 description"
+    "description": "Prova2 description",
+    "cover": "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/285655006/original/387a272c04f43c1f364d43e556883b0907c83a85/design-unique-music-album-cover-art.jpg"
   },
   {
     "name": "Prova3",
-    "description": "Prova3 description"
+    "description": "Prova3 description",
+    "cover": "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/285655006/original/387a272c04f43c1f364d43e556883b0907c83a85/design-unique-music-album-cover-art.jpg"
+  },
+  {
+    "name": "Prova4",
+    "description": "Prova4 description",
+    "cover": "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/285655006/original/387a272c04f43c1f364d43e556883b0907c83a85/design-unique-music-album-cover-art.jpg"
+  },
+  {
+    "name": "Prova5",
+    "description": "Prova5 description",
+    "cover": "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/285655006/original/387a272c04f43c1f364d43e556883b0907c83a85/design-unique-music-album-cover-art.jpg"
+  },
+  {
+    "name": "Prova6",
+    "description": "Prova6 description",
+    "cover": "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/285655006/original/387a272c04f43c1f364d43e556883b0907c83a85/design-unique-music-album-cover-art.jpg"
+  },
+  {
+    "name": "Prova7",
+    "description": "Prova7 description",
+    "cover": "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/285655006/original/387a272c04f43c1f364d43e556883b0907c83a85/design-unique-music-album-cover-art.jpg"
+  },
+  {
+    "name": "Prova8",
+    "description": "Prova8 description",
+    "cover": "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/285655006/original/387a272c04f43c1f364d43e556883b0907c83a85/design-unique-music-album-cover-art.jpg"
   }
 ]

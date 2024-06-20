@@ -10,11 +10,18 @@
 
   <body>
     <div id="app" v-cloak>
-      <h1>{{title}}</h1>
-      <div class="card" v-for="disc in this.musicDiscs">
-        <h3>{{disc.name}}</h3>
-        <p>{{disc.description}}</p>
-      </div>
+      <header>
+        <h1>{{title}}</h1>
+      </header>
+      <main>
+        <div class="container">
+          <div class="card" v-for="disc in this.musicDiscs">
+            <img class="cover" :src="disc.cover" :alt="disc.name" />
+            <h3>{{disc.name}}</h3>
+            <p>{{disc.description}}</p>
+          </div>
+        </div>
+      </main>
     </div>
     <!-- Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
