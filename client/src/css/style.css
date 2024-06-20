@@ -11,13 +11,12 @@
   display: none;
 }
 
-header {
-  background-color: rgb(33, 33, 126);
+body {
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
-main {
-  padding: 30px 0;
-  background-color: rgb(6, 0, 34);
+header {
+  background-color: #0a090f;
 }
 
 h1 {
@@ -39,10 +38,20 @@ h1 {
 
 .card {
   text-align: center;
-  border: 1px solid rgb(255, 255, 255);
   padding: 20px;
   color: white;
   border-radius: 20px;
+  background-color: #0a090f;
+}
+
+.card:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(248, 27, 3, 1) 0%,
+    rgba(255, 100, 134, 1) 49%,
+    rgba(253, 208, 46, 1) 100%
+  );
 }
 
 .cover {
@@ -52,9 +61,10 @@ h1 {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .logo img {
-  width: 80px;
-  margin-left: 30px;
+  height: 120px;
+  margin: 50px;
 }
