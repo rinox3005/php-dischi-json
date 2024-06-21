@@ -17,7 +17,9 @@
           </div>
         </div>
         <div class="container">
+          <!-- Contenitore degli album -->
           <div class="card-container">
+            <!-- Card che contiene album e dati -->
             <div
               class="card"
               v-for="disc in this.musicDiscs"
@@ -29,9 +31,12 @@
             </div>
           </div>
         </div>
+        <!-- Modale per mostrare le info del cd selezionato -->
         <div v-show="showInfo" class="info" @click.self="closeInfo()">
           <div class="info-content">
+            <!-- Pulsante di chiusura modale -->
             <span class="close-info" @click="closeInfo()">&times;</span>
+            <!-- Cover e titolo -->
             <div class="album">
               <img
                 class="cover-info"
@@ -39,6 +44,7 @@
                 :alt="infoResults.name" />
               <h2>Album: <span>{{infoResults.name}}</span></h2>
             </div>
+            <!-- Info Disco -->
             <div class="disc-info">
               <div>Artist: <span>{{infoResults.artist}}</span></div>
               <div>Release: <span>{{infoResults.year}}</span></div>

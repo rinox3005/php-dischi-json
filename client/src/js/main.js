@@ -10,7 +10,7 @@ createApp({
     };
   },
   methods: {
-    // funzione che fa la chiamata axios e si aspetta un parametro id per le info della modale, se il parametro non c'é fa la chiamata classica
+    // Funzione che fa la chiamata axios e si aspetta un parametro id per le info della modale, se il parametro non c'é fa la chiamata classica
     getMusicDiscs(id) {
       const params = {};
       if (id) {
@@ -25,6 +25,7 @@ createApp({
         }
       });
     },
+    // Funzione per chiudere la modale che mostra le info
     closeInfo() {
       this.showInfo = false;
     },
