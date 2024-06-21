@@ -18,6 +18,7 @@ createApp({
         tracks: null,
       },
       message: "",
+      showNewDiscForm: false,
     };
   },
   methods: {
@@ -58,6 +59,7 @@ createApp({
           if (response.data.success) {
             this.message = "Disc successfully added";
             this.getMusicDiscs();
+            // this.closeNewDiscModal();
             this.newDisc = {
               name: "",
               artist: "",
@@ -80,6 +82,28 @@ createApp({
     // Funzione per chiudere la modale che mostra le info
     closeInfo() {
       this.showInfo = false;
+    },
+    // Metodo per mostrare la modale del form per il nuovo disco
+    showNewDiscModal() {
+      this.showNewDiscForm = true;
+    },
+
+    // Resetta i campi del form del nuovo disco
+    resetNewDisc() {
+      this.newDisc = {
+        name: "",
+        artist: "",
+        description: "",
+        cover: "",
+        year: null,
+        tracks: null,
+      };
+    },
+
+    // Metodo per chiudere la modale del form per il nuovo disco
+    closeNewDiscModal() {
+      this.showNewDiscForm = false;
+      this.resetNewDisc(); // Resetta i campi del form quando si chiude la modale
     },
   },
   created() {

@@ -30,7 +30,7 @@ h1 {
 }
 
 /* LAYOUT */
-.container {
+.mycontainer {
   margin: 0 auto;
   width: 80%;
 }
@@ -41,9 +41,10 @@ h1 {
   justify-content: center;
   gap: 30px;
   margin-bottom: 100px;
+  position: relative;
 }
 
-.card {
+.cards {
   text-align: center;
   padding: 20px;
   color: white;
@@ -51,7 +52,7 @@ h1 {
   background-color: #0a090fb0;
 }
 
-.card:hover {
+.cards:hover {
   cursor: pointer;
   background: linear-gradient(
     90deg,
@@ -76,12 +77,38 @@ h1 {
   margin: 40px;
 }
 
+.newDisc {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: -55px;
+  right: 40px;
+}
+
+.newDisc a {
+  text-decoration: none;
+  color: red;
+}
+
 /* Modal Info */
 
 .info {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.newDiscForm {
+  display: flex;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -114,6 +141,23 @@ h1 {
   position: relative;
 }
 
+.newDisc-content {
+  background: linear-gradient(to right, #0f0c2998, #302b638f, #24243e9a) #383232;
+  margin: auto;
+  padding: 40px;
+  border: 2px solid;
+  border-image: linear-gradient(
+      rgba(248, 27, 3, 1) 0%,
+      rgba(183, 24, 148, 1) 58%,
+      rgba(253, 208, 46, 1) 100%
+    )
+    90;
+  width: 50%;
+  max-width: 1200px;
+  position: relative;
+  color: antiquewhite;
+}
+
 .close-info {
   color: #aaa;
   font-size: 35px;
@@ -134,10 +178,20 @@ h1 {
   width: 450px;
 }
 
-.card h2,
+.cards h2,
 h3,
 h4 {
   margin-top: 10px;
+}
+
+.cards h2 {
+  font-size: 23px;
+}
+.cards h3 {
+  font-size: 20px;
+}
+.cards h4 {
+  font-size: 18px;
 }
 
 .album {
