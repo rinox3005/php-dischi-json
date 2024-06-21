@@ -4,9 +4,20 @@ createApp({
   data() {
     return {
       urlAPI: "http://localhost/php-dischi-json/server/server.php",
+      urlAddNewDisk:
+        "http://localhost/php-dischi-json/server/createNewDisc.php",
       musicDiscs: [],
       infoResults: {},
       showInfo: false,
+      newDisc: {
+        name: "",
+        artist: "",
+        description: "",
+        cover: "",
+        year: null,
+        tracks: null,
+      },
+      message: "",
     };
   },
   methods: {
@@ -24,6 +35,47 @@ createApp({
           this.musicDiscs = response.data;
         }
       });
+    },
+    // Funzione per la chiamata per aggiungere un nuovo disco
+    addNewDisc() {
+      // parametri passati dal form
+      const data = {
+        action: "create",
+        name: this.newDisc.name,
+        artist: this.newDisc.artist,
+        description: this.newDisc.description,
+        cover: this.newDisc.cover,
+        year: this.newDisc.year,
+        tracks: this.newDisc.tracks,
+      };
+
+      axios
+        .post(this.urlAddNewDisk, data, {
+          headers: { "Content-Type": "multipart/form-data" },
+        })
+        .then((response) => {
+          // alla risposta richiamo la funzione per mostrarmi i dischi e azzero i campi
+          if (response.data.success) {
+            this.message = "Disc successfully added";
+            this.getMusicDiscs();
+            this.newDisc = {
+              name: "",
+              artist: "",
+              description: "",
+              cover: "",
+              year: null,
+              tracks: null,
+            };
+            // se ottengo una risposya negativa restituisco un messaggio di errore
+          } else {
+            this.message = response.data.error;
+          }
+        })
+        .catch((error) => {
+          // se la chiamata non va a buon fine prendo l'errore e lo restituisco sotto forma di messaggio sia in console che in pagina
+          console.error(error);
+          this.message = "Error while adding new disc";
+        });
     },
     // Funzione per chiudere la modale che mostra le info
     closeInfo() {
