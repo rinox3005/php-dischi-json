@@ -81,13 +81,36 @@ h1 {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  top: -55px;
+  top: -40px;
   right: 40px;
 }
 
-.newDisc a {
-  text-decoration: none;
-  color: red;
+.fa-compact-disc {
+  font-size: 30px;
+  color: #0a090fb0;
+}
+
+.addIcon:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(248, 27, 3, 1) 0%,
+    rgba(183, 24, 148, 1) 58%,
+    rgba(253, 208, 46, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.addIcon {
+  color: #0a090fb0;
+}
+
+.fa-plus {
+  color: #0a090fb0;
+  font-size: 16px;
+  vertical-align: top;
 }
 
 /* Modal Info */
