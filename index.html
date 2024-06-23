@@ -41,12 +41,13 @@
                             <h4>{{disc.year}}</h4>
                         </div>
                             <i class="fas fa-xmark" @click="disc.checkDelete = true"></i>
-                            <div class="checkDelete" v-show="disc.checkDelete">
-                                <div>Deleting Disc: are you sure?</div>
-                                 <span @click="deleteDisc(disc.id, index)">Yes</span>
-                                 <span @click="disc.checkDelete = false">No</span>
-                            </div>
-                        
+                            <div class="overlay" v-if="disc.checkDelete">
+                                <div class="checkDelete" v-show="disc.checkDelete">
+                                    <div class="mb-3 fw-bold">Confirm deleting disc?</div>
+                                    <button class="btn btn-success me-3" @click="deleteDisc(disc.id, index)">Yes</button>
+                                    <button class="btn btn-danger" @click="disc.checkDelete = false">No</button>
+                                </div>
+                           </div>
                     </div>
                 </div>
             </div>
