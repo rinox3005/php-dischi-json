@@ -6,6 +6,7 @@ createApp({
       urlAPI: "http://localhost/php-dischi-json/server/server.php",
       urlAddNewDisk:
         "http://localhost/php-dischi-json/server/createNewDisc.php",
+      urlDeleteDisc: "http://localhost/php-dischi-json/server/deleteDisc.php",
       musicDiscs: [],
       infoResults: {},
       showInfo: false,
@@ -77,6 +78,30 @@ createApp({
           // se la chiamata non va a buon fine prendo l'errore e lo restituisco sotto forma di messaggio sia in console che in pagina
           console.error(error);
           this.message = "Error while adding new disc";
+        });
+    },
+    // Funzione per la chiamata per eliminare un disco per id
+    deleteDisc(discId) {
+      const data = {
+        action: "delete",
+        id: discId,
+      };
+
+      axios
+        .post(this.urlDeleteDisc, data, {
+          headers: { "Content-Type": "multipart/form-data" },
+        })
+        .then((response) => {
+          if (response.data.success) {
+            this.message = "Disc successfully deleted";
+            this.getMusicDiscs();
+          } else {
+            this.message = response.data.error;
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+          this.message = "Error while deleting disc";
         });
     },
     // Funzione per chiudere la modale che mostra le info
