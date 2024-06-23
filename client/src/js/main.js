@@ -20,6 +20,7 @@ createApp({
       },
       message: "",
       showNewDiscForm: false,
+      checkDelete: false,
     };
   },
   methods: {

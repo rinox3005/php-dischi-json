@@ -50,6 +50,7 @@ h1 {
   color: white;
   border-radius: 20px;
   background-color: #0a090fb0;
+  position: relative;
 }
 
 .cards:hover {
@@ -215,6 +216,23 @@ h4 {
 }
 .cards h4 {
   font-size: 18px;
+}
+
+.cards > i {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  color: red;
+}
+
+.checkDelete {
+  position: absolute;
+  width: 60%;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
 }
 
 .album {

@@ -33,11 +33,20 @@
                         
                     </div>
                     <!-- Card che contiene album e dati -->
-                    <div class="cards" v-for="disc in this.musicDiscs" @click="getMusicDiscs(disc.id)">
-                        <img class="cover" :src="disc.cover" :alt="disc.name" />
-                        <h2>{{disc.name}}</h2>
-                        <h3>{{disc.artist}}</h3>
-                        <h4>{{disc.year}}</h4>
+                    <div class="cards" v-for="disc in this.musicDiscs">
+                        <div @click="getMusicDiscs(disc.id)">
+                            <img class="cover" :src="disc.cover" :alt="disc.name" />
+                            <h2>{{disc.name}}</h2>
+                            <h3>{{disc.artist}}</h3>
+                            <h4>{{disc.year}}</h4>
+                        </div>
+                            <i class="fas fa-xmark" @click="disc.checkDelete = true"></i>
+                            <div class="checkDelete" v-show="disc.checkDelete">
+                                <div>Deleting Disc: are you sure?</div>
+                                 <span @click="deleteDisc(disc.id, index)">Yes</span>
+                                 <span @click="disc.checkDelete = false">No</span>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
