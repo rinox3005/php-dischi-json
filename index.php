@@ -11,8 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- FontAwesome -->
-     <script src="https://kit.fontawesome.com/7711c3f1fc.js" crossorigin="anonymous"></script>
-    </head>
+    <script src="https://kit.fontawesome.com/7711c3f1fc.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
     <div id="app" v-cloak>
@@ -27,10 +27,10 @@
                 <div class="card-container">
                     <div class="newDisc">
                         <div class="addIcon" @click="showNewDiscModal()">
-                            <i class="fa-solid fa-compact-disc" ></i>
+                            <i class="fa-solid fa-compact-disc"></i>
                             <i class="fa-solid fa-plus"></i>
                         </div>
-                        
+
                     </div>
                     <!-- Card che contiene album e dati -->
                     <div class="cards" v-for="disc in this.musicDiscs">
@@ -40,14 +40,16 @@
                             <h3>{{disc.artist}}</h3>
                             <h4>{{disc.year}}</h4>
                         </div>
-                            <i class="fas fa-xmark" @click="disc.checkDelete = true"></i>
-                            <div class="overlay" v-if="disc.checkDelete">
-                                <div class="checkDelete" v-show="disc.checkDelete">
-                                    <div class="mb-3 fw-bold">Confirm deleting disc?</div>
-                                    <button class="btn btn-success me-3" @click="deleteDisc(disc.id, index)">Yes</button>
-                                    <button class="btn btn-danger" @click="disc.checkDelete = false">No</button>
-                                </div>
-                           </div>
+                        <!-- Eliminazione del disco -->
+                        <i class="fas fa-xmark" @click="disc.checkDelete = true"></i>
+                        <div class="overlay" v-if="disc.checkDelete">
+                            <!-- Modale richiesta conferma eliminazione -->
+                            <div class="checkDelete" v-show="disc.checkDelete">
+                                <div class="mb-3 fw-bold">Confirm deleting disc?</div>
+                                <button class="btn btn-success me-3" @click="deleteDisc(disc.id, index)">Yes</button>
+                                <button class="btn btn-danger" @click="disc.checkDelete = false">No</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,6 +76,7 @@
             <div v-show="showNewDiscForm" class="newDiscForm">
                 <div class="newDisc-content">
                     <span class="close-info" @click="closeNewDiscModal()">&times;</span>
+                    <!-- Form aggiunta nuovo disco -->
                     <form @submit.prevent="addNewDisc()" class="p-4">
                         <h2 class="mb-4 text-danger">Add New Disc</h2>
                         <div class="mb-3">
